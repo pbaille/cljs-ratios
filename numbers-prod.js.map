@@ -1,0 +1,17 @@
+{"version":3,
+ "file":"numbers-prod.js.map",
+ "sources":
+ ["target/cljsbuild-compiler-2/goog/base.js",
+  "target/cljsbuild-compiler-2/goog/string/string.js",
+  "target/cljsbuild-compiler-2/goog/debug/error.js",
+  "target/cljsbuild-compiler-2/goog/asserts/asserts.js",
+  "target/cljsbuild-compiler-2/goog/array/array.js",
+  "target/cljsbuild-compiler-2/goog/object/object.js",
+  "target/cljsbuild-compiler-2/goog/string/stringbuffer.js",
+  "target/cljsbuild-compiler-2/cljs/core.cljs",
+  "target/cljsbuild-compiler-2/constants_table.cljs",
+  "target/cljsbuild-compiler-2/cljs_numbers/ratios.cljs",
+  "target/cljsbuild-compiler-2/cljs_numbers/core.cljs"],
+ "lineCount":3,
+ "mappings":"",
+ "names":[]}
