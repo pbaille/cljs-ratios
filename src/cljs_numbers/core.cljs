@@ -2,7 +2,6 @@
   (:refer-clojure :exclude [+ - * / mod > < >= <= number? integer? = ratio?])
   (:require [cljs-numbers.ratios :as r :refer [rat ratio? value int?]]))
 
-
 ;;Casters, Identifiers, Helpers
 ;------------------------------------------------
 
