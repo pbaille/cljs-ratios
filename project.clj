@@ -1,14 +1,16 @@
-(defproject cljs-numbers "0.1"
+(defproject cljs-numbers "0.2-SNAPSHOT"
   :description "rational numbers in clojurescript, with the help of Ratio.js"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/pbaille/cljs-numbers"
 
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2173"]]
-
+  
   :plugins [[lein-cljsbuild "1.0.2"]
             [com.cemerick/clojurescript.test "0.3.0"]]
-
+  
   :source-paths ["src"]
+  
+  :resource-paths ["target"]
   
   :test-paths ["test"]
 
