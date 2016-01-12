@@ -1,12 +1,13 @@
-(ns cljs-numbers.ratios
+(ns cljs-ratios.ratios
   (:refer-clojure :exclude [= + - * / to-array < > <= >= mod ratio?]))
+
 
 (defn rat [& args]
   (let [cnt (count args)]
     (case cnt
       0 (js/Ratio. 0 1 true) 
       1 (js/Ratio. (first args) 1 true)
-      2 (js/Ratio (first args) (second args) true))))
+      2 (js/Ratio. (first args) (second args) true))))
 
 (defn ratio? [r] (instance? js/Ratio r))
 

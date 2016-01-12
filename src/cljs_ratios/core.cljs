@@ -1,6 +1,6 @@
-(ns cljs-numbers.core 
-  (:refer-clojure :exclude [+ - * / mod > < >= <= number? integer? = ratio?])
-  (:require [cljs-numbers.ratios :as r :refer [rat ratio? value int?]]))
+(ns cljs-ratios.core 
+  (:refer-clojure :exclude [+ - * / mod > < >= <= number? integer? = ratio? float])
+  (:require [cljs-ratios.ratios :as r :refer [rat ratio? value int?]]))
 
 
 ;;Casters, Identifiers, Helpers
@@ -15,6 +15,9 @@
   (defn integer? [x] 
     (or (cljs.core/integer? x) 
         (and (ratio? x) (int? x))))
+  
+  (defn float [x]
+    (if (ratio? x) (value x) (clojure.core/float x)))
   
   (defn rats-int-cast 
     "convert rat to int when possible"

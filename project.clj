@@ -1,6 +1,5 @@
-(defproject cljs-numbers "0.2-SNAPSHOT"
+(defproject cljs-ratios "0.2.2-SNAPSHOT"
   :description "rational numbers in clojurescript, with the help of Ratio.js"
-  :url "https://github.com/pbaille/cljs-numbers"
 
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2173"]]
@@ -16,23 +15,23 @@
 
   :cljsbuild {:test-commands {"unit" ["phantomjs" :runner
                                       "this.literal_js_was_evaluated=true"
-                                      "ratio.js"
+                                      "src/ratio.js"
                                       "target/unit-test.js"]}
               :builds
               {:dev {:source-paths ["src"]
                      :jar true
-                     :compiler {:output-to "target/numbers.js"
+                     :compiler {:output-to "target/cljs-ratios.js"
                                 :optimizations :whitespace
                                 :preamble ["ratio.js"]
-                                :source-map "target/numbers.js.map"}}
+                                :source-map "target/cljs-ratios.js.map"}}
                :prod {:source-paths ["src"]
                      :jar true
-                     :compiler {:output-to "target/numbers-prod.js"
+                     :compiler {:output-to "target/cljs-ratios-prod.js"
                                 :optimizations :advanced
                                 :pretty-print false
                                 :preamble ^:replace ["ratio.js"]
                                 :externs ["externs/ratio_externs.js"]
-                                :source-map "target/numbers-prod.js.map"}}
+                                :source-map "target/cljs-ratios-prod.js.map"}}
                :test {:source-paths ["test"]
                       :jar true
                       :compiler {:output-to "target/unit-test.js"

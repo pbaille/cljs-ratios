@@ -1,11 +1,11 @@
-(ns cljs-numbers.core-spec
+(ns cljs-ratios.core-spec
   (:require-macros 
     [cemerick.cljs.test :refer [is deftest with-test run-tests testing test-var]])
   (:refer-clojure :exclude [+ - * / mod > < >= <= number? integer? =])
-  (:require [cljs-numbers.core :refer [float? number? integer? + - / * rat-auto-cast some-rats? some-floats? cast-rats map-rat < <= > >= = mod pow abs all-rats?]]
-            [cljs-numbers.ratios :refer [value rat]]
+  (:require [cljs-ratios.core :refer [float? number? integer? + - / * rat-auto-cast some-rats? some-floats? cast-rats map-rat < <= > >= = mod pow abs all-rats?]]
+            [cljs-ratios.ratios :refer [value rat]]
             [cemerick.cljs.test :as t]
-            [cljs-numbers.spec-helpers :refer [is-true falsey truthy is-nil]]))
+            [cljs-ratios.spec-helpers :refer [is-true falsey truthy is-nil]]))
 
 
   ;;Casters, Identifiers, Helpers

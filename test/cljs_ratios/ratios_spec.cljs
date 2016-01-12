@@ -3,8 +3,8 @@
     [cemerick.cljs.test :refer [is deftest with-test run-tests testing test-var]])
   (:refer-clojure :exclude [+ - / * < <= > >= mod int? ratio?])
   (:require [cemerick.cljs.test :as t]
-            [cljs-numbers.ratios :as r :refer [rat ratio? den numer int? value + - / * mod abs to-array to-string negate ceil floor < > <= >= pow]]
-            [cljs-numbers.spec-helpers :refer [is-true falsey truthy is-nil]]))
+            [cljs-ratios.ratios :as r :refer [rat ratio? den numer int? value + - / * mod abs to-array to-string negate ceil floor < > <= >= pow]]
+            [cljs-ratios.spec-helpers :refer [is-true falsey truthy is-nil]]))
 
 ;;Test
 ;-----------------------------------------------------------------------
